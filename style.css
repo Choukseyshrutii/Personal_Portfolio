@@ -1,0 +1,990 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+ body{
+    /* display: flex;
+    align-items: center;
+    justify-content:center ; */
+    min-height: 100vh;
+    background: #080808;
+    color: white; 
+}
+ #header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(IMG-20240606-WA0018.jpg); */
+    background-size: cover;
+    background-position: center;
+
+}
+#img
+{
+    margin-top: 50px;
+    height: 40%;
+        width: 31%;
+        margin-right: 0px;
+}
+   
+    /* object-position: top 30px right 20px;
+} */
+.container
+{
+    padding: 10px 10%;
+    
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#name{
+    font-size: 35px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+nav ul li{
+    
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height: 2px;
+    background: rgb(141, 175, 226);
+    position: absolute;
+    left: 0;
+    bottom:-6px ;
+    transition: 0.3s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+ } 
+   
+ .wrapper{
+    margin-top: 90px;
+    width: 100%;
+    height: 100vh;
+    background-color: #080808;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+
+ }
+ 
+ .text{
+    margin-top: 100px;
+    /* margin-left: 70px; */
+    font-size: 20px;
+    padding-left: 20px;
+  
+
+ }
+  img{
+  
+    max-width: 400px;
+    max-height: 250px; 
+
+  
+ }
+h1{
+    margin-left: 0px;
+    margin-top: 10px;
+    color: white;
+    font-size: 50px;
+
+}
+span{
+    color: rgb(141, 175, 226) ;
+}
+
+#about{
+    margin-top: 50px;
+
+    display: flex;
+    align-items:center;
+
+    justify-content:center;
+ 
+    color: black;
+    
+
+}
+.box{
+    background: #262626;
+
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+    border: solid  rgb(141, 175, 226) 0.05px;
+    border-radius: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.sub-title{
+   
+    /* margin-left: 10%; */
+    align-content: center;
+    justify-content:center;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(141, 175, 226);
+}
+p{
+    
+    padding: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+   
+    color: white;
+    font-size: 18px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer ;
+    position: relative;
+    padding-bottom: 0px;
+    
+}
+
+.tab-links::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: rgb(141, 175, 226); 
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+
+}
+.tab-links.active-link::after
+{
+    width: 50%;
+}
+.tab-contents{
+    margin-top: 10px;
+    margin-left: 30px;
+    display: none;
+}
+.tab-contents.active-tab
+{
+    display: block;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:  rgb(141, 175, 226);
+    font-size: 14px;
+}
+
+.tab-contents ul li{
+    
+    list-style: none;
+    margin: 10px 0;
+    color: white;
+    font-size: 12px;
+
+}
+.services{
+    
+    padding: 30px 0;
+    
+  
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+} 
+.services-list div h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+.services-list div:hover{
+    background:  rgb(55, 90, 141);
+    transform: translateY(-10px);
+
+
+}
+#portfolio{
+    padding: 50px 0;
+    
+}
+.work-list{
+        /* display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+     grid-gap: 40px;
+    margin-top: 50px;  */
+    display: flex;
+    flex-wrap: nowrap;
+  justify-content: space-between;
+    gap: 10px;
+ 
+    /* white-space: nowrap; */
+    /* grid-auto-flow: column;
+    flex-wrap: nowrap; */
+
+
+  
+}
+.work{
+    flex: 1;
+   border-radius: 10px;
+
+position: relative;
+overflow: hidden; 
+
+
+
+
+}
+.work img{
+   width: 100%;
+    border-radius: 10px;
+     height: 100%; 
+    display: block;
+    transition:transform 0.5s;
+    margin-top: 30px; 
+
+
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(141, 175, 226));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 12px;    
+    transition: height 0.5s;
+}
+.layer h3{
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+   
+}
+.layer a{
+    margin-top:0px;
+    color: rgb(141, 175, 226) ;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    background: #fff;
+    width: 40px;
+    height:40px ;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    border: 1px solid  rgb(141, 175, 226);
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:  rgb(141, 175, 226);
+}
+.row{
+    padding: 20px;
+    display: flex;
+}
+
+.contact-left{
+flex-basis: 35%;
+
+}
+.contact-left h2{
+    text-align: center;
+color: rgb(141, 175, 226) ;
+
+}
+
+.contact-right{
+flex-basis: 60%;
+
+}
+
+.contact-left p{
+    margin-top: 0px;
+    font-size: 12px;
+}
+.contact-left p i{
+    color:  rgb(141, 175, 226);
+    margin-left: 0px;
+    margin-right: 10px;
+  font-size: 15px;
+}
+.social-icons{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 10px;
+   color: #ababab;
+   display: inline-block;
+   transition:transform 0.5s ;
+}
+.social-icons a:hover{
+    color: rgb(141, 175, 226);
+}
+.btn.btn2{
+    margin-left: 40px;
+    display:inline-block;
+    background:  rgb(141, 175, 226);
+} 
+ .contact-right form{
+    width: 100%;
+    
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:#262626 ;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius:6px ;
+
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width:100%;
+    text-align: center;
+    padding: 0px;
+    background: #262626;
+    font-weight: 200;
+    margin-top:2px ;
+
+}
+
+.copyright i{
+    color:rgb(141, 175, 226) ;
+}
+/* ---------------css for small screen------------ */
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px)
+{
+.text{
+    margin-top: 250px;
+    font-size: 16px;
+
+  }
+  .text h1{
+    font-size: 30px;
+  }
+  nav .fas{
+    display: block;
+    font: 25px;
+  }
+  nav ul{
+    background: rgb(141, 175, 226);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: left 0.5s;
+   
+
+}
+ body{
+    /* display: flex;
+    align-items: center;
+    justify-content:center ; */
+    min-height: 100vh;
+    background: #080808;
+    color: white; 
+}
+ #header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(IMG-20240606-WA0018.jpg); */
+    background-size: cover;
+    background-position: center;
+
+}
+/* #img */
+/* {
+    height: 60%;
+    width: 30%; */
+   
+    /* object-position: top 30px right 20px;
+} */
+.container
+{
+    padding: 10px 10%;
+    
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#name{
+    font-size: 35px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+nav ul li{
+    
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height: 2px;
+    background: rgb(141, 175, 226);
+    position: absolute;
+    left: 0;
+    bottom:-6px ;
+    transition: 0.3s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+ } 
+   
+ .wrapper{
+    margin-top: 90px;
+    width: 100%;
+    height: 100vh;
+    background-color: #080808;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+
+ }
+ 
+ .text{
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 20px;
+    padding-left: 20px;
+  
+
+ }
+ img{
+  
+    max-width: 30%;
+    max-height: 60%;
+    /* object-position: top 20px right 20px; */
+  
+ }
+h1{
+    margin-left: 0px;
+    margin-top: 10px;
+    color: white;
+    font-size: 50px;
+
+}
+span{
+    color: rgb(141, 175, 226) ;
+}
+
+#about{
+    margin-top: 50px;
+   width: 100vw;
+    display: flex;
+    align-items:center;
+
+    justify-content:center;
+ 
+    color: black;
+    
+
+}
+.box{
+    background: #262626;
+
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+    border: solid  rgb(141, 175, 226) 0.05px;
+    border-radius: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.sub-title{
+   
+    /* margin-left: 10%; */
+    align-content: center;
+    justify-content:center;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(141, 175, 226);
+}
+p{
+    
+    padding: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+   
+    color: white;
+    font-size: 18px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer ;
+    position: relative;
+    padding-bottom: 0px;
+    
+}
+
+.tab-links::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: rgb(141, 175, 226); 
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+
+}
+.tab-links.active-link::after
+{
+    width: 50%;
+}
+.tab-contents{
+    margin-top: 10px;
+    margin-left: 30px;
+    display: none;
+}
+.tab-contents.active-tab
+{
+    display: block;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:  rgb(141, 175, 226);
+    font-size: 14px;
+}
+
+.tab-contents ul li{
+    
+    list-style: none;
+    margin: 10px 0;
+    color: white;
+    font-size: 12px;
+
+}
+#services{
+    
+    padding: 30px 0;
+    
+  
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+} 
+.services-list div h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+.services-list div:hover{
+    background:  rgb(55, 90, 141);
+    transform: translateY(-10px);
+
+
+}
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+       
+    padding: 30px 0;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+}
+.work img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+    transition:transform 0.5s;
+
+
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(141, 175, 226));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;    
+    transition: height 0.5s;
+}
+.layer h3{
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top:0px;
+    color: rgb(141, 175, 226) ;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height:60px ;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    border: 1px solid  rgb(141, 175, 226);
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:  rgb(141, 175, 226);
+}
+.row{
+    padding: 20px;
+    display: flex;
+}
+
+.contact-left{
+flex-basis: 35%;
+
+}
+.contact-left h2{
+    text-align: center;
+color: rgb(141, 175, 226) ;
+
+}
+
+.contact-right{
+flex-basis: 60%;
+
+}
+
+.contact-left p{
+    margin-top: 0px;
+    font-size: 12px;
+}
+.contact-left p i{
+    color:  rgb(141, 175, 226);
+    margin-left: 0px;
+    margin-right: 10px;
+  font-size: 15px;
+}
+.social-icons{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 10px;
+   color: #ababab;
+   display: inline-block;
+   transition:transform 0.5s ;
+}
+.social-icons a:hover{
+    color: rgb(141, 175, 226);
+}
+.btn.btn2{
+    margin-left: 40px;
+    display:inline-block;
+    background:  rgb(141, 175, 226);
+} 
+ .contact-right form{
+    width: 100%;
+    
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:#262626 ;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius:6px ;
+
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width:100%;
+    text-align: center;
+    padding: 0px;
+    background: #262626;
+    font-weight: 200;
+    margin-top:2px ;
+
+}
+
+.copyright i{
+    color:rgb(141, 175, 226) ;
+}
+/* nav .fas,.fab{ 
+    display:none;
+
+} */
+nav .fas {
+    display: none;
+}
+
+/* Additional rules to ensure the icons are hidden on larger screens */
+nav .fa-solid {
+    display: none;
+}
+/* ---------------css for small screen------------ */
+
+@media only screen and (max-width: 600px)
+{
+    #img{ 
+        height: 100%;
+        width: 100%;
+    }
+.text{
+    margin-top: 100%;
+    font-size: 16px;
+
+  }
+  .text h1{
+    font-size: 30px;
+  }
+  
+ 
+/* 
+  nav .fa-solid{
+    display: block;
+    font: 25px;
+  } */
+  nav ul{
+    background: rgb(141, 175, 226);
+    position: fixed;
+    top: 0;
+    left:-300px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: left 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+
+  }
+ 
+  
+
+  
+  
+  #sidemenu span{
+    color: #080808;
+  }
+  .sub-title{
+    font-size: 40px;
+
+  }
+  .box p{
+    font-size: 14px;
+  }
+  .tab-links{
+    font-size:16px ;
+    margin-right: 20px;
+  }
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+
+  }
+  .copyright{
+    font-size: 14px;
+  }
+  
+}}

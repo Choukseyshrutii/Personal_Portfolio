@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/50664d3a05.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+   
+   <div class="container">
+    <nav>
+        <!-- <img src="" alt=""> -->
+        <ul id="sidemenu">
+            <li id="name"><span>S</span>hruti<span>.</span></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <img id="img" style="float: right;"  src="IMG-20240606-WA0018.jpg" alt="">
+   
+   
+        <div class="wrapper">
+            
+           <div class="text"><h1>I'm a <span class="auto-type">Developer.</span></h1>
+           </div>  
+         </div>
+
+  
+   </div>
+    <!-- </div> -->
+   
+    
+<div id="about">
+    <div class="box">
+        <h1 class="sub-title">About Me</h1>
+        <p>Hi! I am Shruti Chouksey.I am a 3rd year student pursuing BTech. from IIT(BHU) Varanasi.         
+            <br>  I am passionate about building a career as a Software Development Engineer (SDE). 
+        <br> I am good at Data Structures and Algorithms and Front end Development.</p>
+        
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+           
+        
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li>Programming language: C & C++</li>  
+                <li>Web Development</li>
+                <li>Data Structures and Algorithms</li>
+                <li>OOPs</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2022 - 2026</span><br>BTech. at IIT(BHU) Varanasi</li>
+              
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li>Fresher for now.</li>
+              
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- MY SERVICES -->
+<div id="services">
+        <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolore, voluptates corporis aspernatur quod magni ipsum reprehenderit ab quisquam laborum, quidem deleniti officia eos blanditiis enim, iure tenetur asperiores voluptate.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+        </div>
+
+
+</div>
+<!-- portfolio -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="weatherapp pic.png" >
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>This app tells you about the weather conditions os the different cities .It is created using HTML, CSS, JS and with tha help of API.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="translate.jpeg" >
+                <div class="layer">
+                    <h3>Translater</h3>
+                    <p>This app helps us translate different languages .It is created using HTML, CSS, JS and with tha help of API.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="download (1).jpeg" >
+                <div class="layer">
+                    <h3>Expense Tracker</h3>
+                    <p>This app help us keeping a track of our expenses and savings.It is created using HTML, CSS, JS and with tha help of API.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2>Contact Me</h2>
+                <p><i class="fa-solid fa-envelope"></i>choukseyshruti28@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8815007828</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/shrutii_.0401?igsh=MTlibGR4MzlndWl3YQ=="><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shruti-chouksey-3b7b82257"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/Choukseyshrutii"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="22045130_Shruti _Chouksey _SDE (2).pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+            <form action="">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+     <p>Copyright © Shruti Chouksey <i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed=new Typed(".auto-type",{
+        strings:["Programmer.","Developer."],
+        typeSpeed: 180,
+        backSpeed: 180,
+        loop:true
+    });
+</script>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        } 
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.left="0";
+        }
+        function closemenu(){
+            sidemenu.style.left="-300px";
+        }
+    </script>
+</body>
+</html>
